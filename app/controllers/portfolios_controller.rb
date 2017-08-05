@@ -1,10 +1,12 @@
 class PortfoliosController < ApplicationController
   def index
     @portfolio_items = Portfolio.all
+    @page_title = "My Portfolio Items"
   end
   
   def show
      @portfolio_item = Portfolio.find(params[:id])
+     @page_title = Portfolio.find(params[:id]).title
   end
   
   def new
