@@ -8,6 +8,14 @@ class PortfoliosController < ApplicationController
     @page_title = "My Portfolio Items"
   end
   
+  def sort
+    params[:order].each do |key, value|
+      Portfolio.find(value[:id]).update(position: value[:position])
+    end
+    
+    render nothing: true
+  end
+  
   def show
      @page_title = Portfolio.find(params[:id]).title
   end
