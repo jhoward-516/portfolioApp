@@ -9,7 +9,9 @@
 
   <%= render 'comments/comment_form' %>
 
-  <%= render @blog.comments %>
-
+  <div id="comments" data-blof-id="<% @blog.id %>">
+    <%= render @blog.comments %>
+  </div>
+  
 </div>
 
