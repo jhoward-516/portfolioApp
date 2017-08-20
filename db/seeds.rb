@@ -2,6 +2,25 @@
 # The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
 #
 
+User.create!(
+  email: "admin@test.com",
+  password: "test1234",
+  password_confirmation: "test1234",
+  name: "Admin User",
+  roles: "site_admin"
+  )
+
+puts "1 Admin User created"
+
+User.create!(
+  email: "reg@test.com",
+  password: "test1234",
+  password_confirmation: "test1234",
+  name: "Regular User"
+  )
+
+puts "1 Regular User created"
+
 3.times do |topic|
   Topic.create!(
     title: "Topic #{topic}"
