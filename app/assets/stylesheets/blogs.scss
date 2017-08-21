@@ -1,6 +1,7 @@
 @import "bootstrap";
 @import "font-awesome";
 @import "gritter";
+@import "simplemde";
 
 /*
  * Globals
@@ -169,6 +170,10 @@ h6, .h6 {
 .blog-footer p:last-child {
   margin-bottom: 0;
 }
+
+/*
+ * Custom
+ */
 
 .comment-card > .card {
   margin-top: 15px;
