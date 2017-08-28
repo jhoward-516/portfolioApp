@@ -6,7 +6,7 @@
 /*
  * Globals
  */
-
+ 
 @media (min-width: 48em) {
   html {
     font-size: 18px;
@@ -14,7 +14,7 @@
 }
 
 body {
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: 'Roboto', sans-serif;
   color: #555;
 }
 
@@ -24,8 +24,8 @@ h3, .h3,
 h4, .h4,
 h5, .h5,
 h6, .h6 {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: normal;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: medium;
   color: #333;
 }
 
